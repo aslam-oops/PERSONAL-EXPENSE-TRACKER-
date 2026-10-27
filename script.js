@@ -100,7 +100,7 @@ function drawDonut() {
   $("legend").innerHTML = legend;
 }
 
-// ---------- 7. Show everything on the screen ----------
+// ---------- 7. Category list----------
 function show() {
   save();
 
