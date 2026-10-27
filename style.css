@@ -1,4 +1,4 @@
-/* Colours: only blue shades */
+/* Colours: */
 :root { --dark:#1b3a73; --blue:#4f81bd; --light:#eaf1fa; --line:#c9d9ee; }
 
 /* Page and fonts */
@@ -18,7 +18,7 @@ main { max-width:1050px; margin:auto; padding:16px; }
 .panel h2 { margin-top:0; color:var(--dark); border-bottom:2px solid var(--blue); }
 h3 { color:var(--dark); }
 
-/* Two columns: form on the left, chart on the right */
+/* Two columns: form  */
 .grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
 
 /* Form fields and buttons */
@@ -32,7 +32,7 @@ input, select { width:100%; padding:8px; margin:0 0 8px; border:1px solid #aac3e
 .chips li { background:var(--light); border:1px solid var(--line); border-radius:14px; padding:2px 4px 2px 10px; }
 .chips button { border:0; background:none; color:var(--dark); cursor:pointer; }
 
-/* Donut chart: the SVG is turned so it starts at the top */
+/* Donut chart: the SVG is turned  */
 .donutWrap { position:relative; max-width:220px; margin:auto; }
 #donut { width:100%; transform:rotate(-90deg); }
 .center { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; }
