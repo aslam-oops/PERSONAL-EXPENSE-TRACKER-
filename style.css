@@ -1,0 +1,52 @@
+/* Colours: only blue shades */
+:root { --dark:#1b3a73; --blue:#4f81bd; --light:#eaf1fa; --line:#c9d9ee; }
+
+/* Page and fonts */
+* { box-sizing: border-box; }
+body { margin:0; background:var(--light); font-family:Georgia, serif; color:#222; }
+header { background:var(--dark); color:#fff; text-align:center; padding:20px; border-bottom:4px solid var(--blue); }
+h1 { margin:0; }
+main { max-width:1050px; margin:auto; padding:16px; }
+
+/* Boxes (cards and panels) */
+.cards { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-bottom:16px; }
+.card, .panel { background:#fff; border:1px solid var(--line); border-radius:4px; padding:14px; }
+.card { text-align:center; border-top:4px solid var(--blue); }
+.card span { display:block; color:#5a6b85; }
+.card b { font-size:1.5rem; color:var(--dark); }
+.panel { margin-bottom:16px; }
+.panel h2 { margin-top:0; color:var(--dark); border-bottom:2px solid var(--blue); }
+h3 { color:var(--dark); }
+
+/* Two columns: form on the left, chart on the right */
+.grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+
+/* Form fields and buttons */
+input, select { width:100%; padding:8px; margin:0 0 8px; border:1px solid #aac3e3; border-radius:3px; font:inherit; }
+.btn { padding:8px 16px; background:var(--dark); color:#fff; border:0; border-radius:3px; cursor:pointer; font:inherit; }
+.btn:hover { background:var(--blue); }
+.inline { display:flex; gap:8px; }
+
+/* Category chips */
+.chips { list-style:none; padding:0; display:flex; flex-wrap:wrap; gap:6px; }
+.chips li { background:var(--light); border:1px solid var(--line); border-radius:14px; padding:2px 4px 2px 10px; }
+.chips button { border:0; background:none; color:var(--dark); cursor:pointer; }
+
+/* Donut chart: the SVG is turned so it starts at the top */
+.donutWrap { position:relative; max-width:220px; margin:auto; }
+#donut { width:100%; transform:rotate(-90deg); }
+.center { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; }
+.legend { list-style:none; padding:0; }
+.legend li { display:flex; gap:8px; align-items:center; padding:2px 0; }
+.legend i { width:12px; height:12px; display:inline-block; }
+.legend span { flex:1; }
+
+/* Filters and tables */
+.filters { display:grid; grid-template-columns:2fr 1.3fr 1fr 1fr 1fr auto; gap:8px; }
+table { width:100%; border-collapse:collapse; }
+th { background:var(--dark); color:#fff; text-align:left; padding:8px; font-weight:normal; }
+td { padding:8px; border-bottom:1px solid var(--line); }
+td button { border:0; background:none; color:var(--dark); text-decoration:underline; cursor:pointer; }
+
+/* Small screens: one column */
+@media (max-width:800px) { .grid, .cards, .filters { grid-template-columns:1fr; } }
